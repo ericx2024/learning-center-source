@@ -19,6 +19,7 @@ import { MatIconModule} from "@angular/material/icon";
 import { MatPaginatorModule} from "@angular/material/paginator";
 import {MatInputModule} from "@angular/material/input";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { StudentFormComponent } from './learning/components/student-form/student-form.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     AboutComponent,
     HomeComponent,
     PageNotFoundComponent,
-    StudentsComponent
+    StudentsComponent,
+    StudentFormComponent
   ],
   imports: [
     BrowserModule,
