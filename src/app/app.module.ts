@@ -10,20 +10,48 @@ import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-fo
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonModule} from "@angular/material/button";
 import {HttpClientModule} from "@angular/common/http";
+import { StudentsComponent } from './learning/pages/students/students.component';
+import {
+  MatTableModule
+} from "@angular/material/table";
+import { MatSortModule} from "@angular/material/sort";
+import { MatIconModule} from "@angular/material/icon";
+import { MatPaginatorModule} from "@angular/material/paginator";
+import {MatInputModule} from "@angular/material/input";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    StudentsComponent
   ],
   imports: [
     BrowserModule,
+
     AppRoutingModule,
-    MatToolbarModule,
+
+    HttpClientModule,
+
+    MatInputModule,
+
+    FormsModule,
+
+    ReactiveFormsModule,
+
     MatButtonModule,
-    HttpClientModule
+
+    MatTableModule,
+
+    MatSortModule,
+
+    MatIconModule,
+
+    MatPaginatorModule,
+
+    MatToolbarModule,
   ],
   providers: [
     provideAnimationsAsync()
