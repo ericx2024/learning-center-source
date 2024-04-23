@@ -9,6 +9,7 @@ import { HomeComponent } from './public/pages/home/home.component';
 import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonModule} from "@angular/material/button";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {MatButtonModule} from "@angular/material/button";
     AppRoutingModule,
     MatToolbarModule,
     MatButtonModule,
+    HttpClientModule
   ],
   providers: [
     provideAnimationsAsync()
